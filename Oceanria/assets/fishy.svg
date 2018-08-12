@@ -1,0 +1,45 @@
+<svg id="fishy_svg" xmlns="http://www.w3.org/2000/svg" 
+	 viewBox="0 0 318 322">
+<style type="text/css">
+	.st0{
+	fill:#E8F72F;
+	}
+
+	.st1{
+	fill:#F99DF5;
+	}
+
+	.st2{
+	clip-path:url(#XMLID_3_);
+	fill:#111110;
+	}
+
+	.st3{
+	clip-path:url(#XMLID_3_);
+	fill:#FFFFFF;
+	}
+
+</style>
+	<symbol id="fishsymbol" >
+	<g class="icon">
+	<path class="fins" d="M303,217.4c-23.5-0.4-42.1-21.8-41.6-47.7s19.9-46.5,43.3-46.1c23.5,0.4-11.2,24.1-11.6,50
+		S326.4,217.8,303,217.4z"/>
+	<path class="fins" d="M160,283c0,15.5,27.5,28,12,28s-89,45-89-48c0-15.5,33.5-8,49-8S160,267.5,160,283z"/>
+	<path class="fins" d="M174,46c0,15.5-12.5,28-28,28s-49,1.5-49-14c0-88,72.5-42,88-42S174,30.5,174,46z"/>
+	<path class="body" d="M268,162c0,60.2-79.6,109-144.5,109c-41.4,0-77.8-19.9-98.8-49.9c-3-4.3,26.6-17.4,24.3-22.1
+		c-1.6-3.2-35.3,2-36.6-1.4C8.3,186.4,6,174.5,6,162C6,101.8,58.6,53,123.5,53S268,101.8,268,162z"/>
+	<g class ="eye">
+		<defs>
+			<circle id="XMLID_1_" cx="71" cy="135" r="30"/>
+		</defs>
+		<use xlink:href="#XMLID_1_"  style="overflow:visible;fill:#FFFFFF;"/>
+		<clipPath id="XMLID_3_">
+			<use xlink:href="#XMLID_1_"  style="overflow:visible;"/>
+		</clipPath>
+		<circle class="st2" cx="74" cy="128" r="17"/>
+		<circle class="st3" cx="72" cy="119" r="3"/>
+	</g>
+	<path class="fins" d="M148.1,196.9c-22.7-6.1-38.4-20.9-35.1-33.2c3.3-12.3,24.3-17.3,47-11.2s58.3,26.3,55,38.5
+		S170.8,203,148.1,196.9z"/>
+	</g>
+</svg>

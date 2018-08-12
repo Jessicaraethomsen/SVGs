@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Rammetto+One');
+
+
+$primary-blue: #619EF7;
+$dark-pink: #EF9AB4;
+$light-pink: #FFCAE5;
+$white: #ffffff;
+$black: #161D2D;
+
+$font-primary: 'Rammetto One', sans-serif;
+
+
+
+body {
+	margin: 0;
+	padding: 0;
+	background: $primary-blue;
+}
+
+a {
+  color: $dark-pink;
+  -webkit-transition: all .35s;
+  -moz-transition: all .35s;
+  transition: all .35s;
+}
+
+a:hover, a:focus {
+  color: $light-pink;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-primary;
+  font-weight: 200;
+  color: $white;
+  letter-spacing: 1px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  color: $white;
+}
+
+
+
+.title{
+	margin: 50px 0px 50px 0px;
+}
+
+.test-border{
+	border: 2px solid white;
+}
+
+.center-canvas{
+                margin: 0 auto;
+                width: 100%;
+            }
+
+ section{
+
+ margin-top: 100px;
+
+ }
+
+
+
+ /*Testing out SVGs*/
+
+.thefish{
+	width:80%;
+
+.thefish:hover & {
+    transform: translateY(50px);
+  }
+}
+
+
+ .fins{
+
+ fill:#E8F72F;
+
+ }
+
+ .body{
+
+ fill: pink;
+ animation: fishcolor 4s ease-in-out infinite;
+ 
+ }
+
+ .icon{
+
+ @extend .thefish;
+ transition: all .5s linear;
+ }
+
+
+/* @keyframes fish{
+  0%        {opacity: 0}
+  15%, 70%  {opacity: 1}
+  85%, 100% {opacity: 0}
+}*/
+
+@keyframes fishcolor{
+ from {fill: coral;}
+ to {fill: darkpink;}
+ }
+
+ .blackeye{
+ clip-path:url(#XMLID_3_);
+ fill:#111110;
+ }
+
+ .whiteeye{
+ clip-path:url(#XMLID_3_);
+ fill:#FFFFFF;
+ }
+

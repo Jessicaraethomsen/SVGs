@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Oceanaria</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script src="phaser/phaser2.10.3.min.js"></script>
+</head>
+<body>
+
+	<section class= "section1">
+		<div class="container">
+			<div class="row">
+				<div class="title col-lg-12 text-center">
+					<h1>Oceanari</h1>
+					<h2>The Safari of the Ocean</h2>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg">
+					<div id="game" class=" center-canvas"></div>
+				</div>
+				<div class="col-md"></div>
+			</div>
+		</div>
+
+	</section>
+
+	<section class= "section2">
+		<div class="container">
+			<div class="row">
+				<div class="title col-lg-6 text-center">
+				<figure class="thefish">
+					<svg id="fishy_svg" xmlns="http://www.w3.org/2000/svg" 
+					viewBox="0 0 318 322" aria-labelby="fishtitle" aria-describeby="fishdesc">
+					<title id="fishtitle"> Fish swimming</title>
+					<desc id="fishdesc">Graphic of a fish swimming back and forth</desc>
+					<symbol id="fish_symbol" viewBox="0 0 340 340">
+					<g class="icon">
+
+					<path class="fins" d="M303,217.4c-23.5-0.4-42.1-21.8-41.6-47.7s19.9-46.5,43.3-46.1c23.5,0.4-11.2,24.1-11.6,50
+					S326.4,217.8,303,217.4z"/>
+					<path class="fins" d="M160,283c0,15.5,27.5,28,12,28s-89,45-89-48c0-15.5,33.5-8,49-8S160,267.5,160,283z"/>
+					<path class="fins" d="M174,46c0,15.5-12.5,28-28,28s-49,1.5-49-14c0-88,72.5-42,88-42S174,30.5,174,46z"/>
+					<path class="fishoutline" d="M268,162c0,60.2-79.6,109-144.5,109c-41.4,0-77.8-19.9-98.8-49.9c-3-4.3,26.6-17.4,24.3-22.1
+					c-1.6-3.2-35.3,2-36.6-1.4C8.3,186.4,6,174.5,6,162C6,101.8,58.6,53,123.5,53S268,101.8,268,162z"/>
+					<path class="body" fill="#231F20" d="M268,162c0,60.2-79.6,109-144.5,109c-41.4,0-77.8-19.9-98.8-49.9c-3-4.3,26.6-17.4,24.3-22.1
+					c-1.6-3.2-35.3,2-36.6-1.4C8.3,186.4,6,174.5,6,162C6,101.8,58.6,53,123.5,53S268,101.8,268,162z"/>
+					<g class="eyes">
+						<defs>
+							<circle id="XMLID_1_" cx="71" cy="135" r="30"/>
+						</defs>
+						<use xlink:href="#XMLID_1_"  style="overflow:visible;fill:#FFFFFF;"/>
+						<clipPath id="XMLID_3_">
+							<use xlink:href="#XMLID_1_"  style="overflow:visible;"/>
+						</clipPath>
+						<circle class="blackeye" cx="74" cy="128" r="17"/>
+						<circle class="whiteeye" cx="72" cy="119" r="3"/>
+					</g>
+					<path class="fins" d="M148.1,196.9c-22.7-6.1-38.4-20.9-35.1-33.2c3.3-12.3,24.3-17.3,47-11.2s58.3,26.3,55,38.5
+					S170.8,203,148.1,196.9z"/>
+					</g>
+			</symbol>
+
+			 <use class="orginal-fish" href="#fish_symbol"></use>
+
+			</svg>
+
+				</figure>
+				</div>
+				<div class="title col-lg-6 text-center">
+
+					<h2>FISH BOWL SVG</h2>
+					<p>Lorem ipsum dolor sit amet, autem vitae explicari sed ea. Nam at dicat phaedrum. In placerat platonem scripserit eam, id sit commune perpetua. Pro ad veri admodum, an per tollit option omittam.
+
+					At mei etiam denique, ei ipsum corpora his, ex labore repudiare intellegat ius. Te pro homero facilis, quis esse vis cu. Simul voluptaria consequuntur at pri, cibo copiosae ex ius. Sit purto regione eu. Vocent voluptatum no has, ne cum dico velit patrioque. Nam sale theophrastus te, cu omittam voluptatibus quo.</p>
+					<br>
+					<svg class="mini-fish">
+						 <use href="#fish_symbol"></use>
+					</svg>
+
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+<!-- loading level and game scripts --> 
+<script src="phaser/boot.js"></script> 
+<script src="phaser/splash1.js"></script> 
+<script src="phaser/level1.js"></script> 
+<script src="phaser/game.js"></script>
+
+</body>
+</html> 
