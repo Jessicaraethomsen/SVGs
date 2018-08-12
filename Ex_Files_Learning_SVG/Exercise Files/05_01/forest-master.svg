@@ -1,0 +1,29 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64.3 64.3">
+
+	<style type="text/css">
+		.tree-light  { fill:#5FA838; }
+		.tree-medium { fill:#338912; }
+		.tree-dark   { fill:#1A6800; }
+		.tree-grey   { fill:#5C8942; }
+	</style>
+
+	<polygon class="tree-light" points="25.9,0.1 -4.4,0.1 10.8,-49.8 "/>
+	<polygon class="tree-grey" points="42.5,6.5 16,6.5 29.3,-41 "/>
+	<polygon class="tree-light" points="67.8,9.8 31.1,9.8 49.4,-56.6 "/>
+	<polygon class="tree-medium" points="25.9,31.3 -4.4,31.3 10.8,-18.3 "/>
+	<polygon class="tree-medium" points="47.3,33.4 17,33.4 32.1,-16.2 "/>
+	<polygon class="tree-medium" points="67.8,29.7 37.5,29.7 52.6,-19.8 "/>
+	<polygon class="tree-dark" points="17,50.5 -8.3,50.5 4.3,9.2 "/>
+	<polygon class="tree-dark" points="36.1,60 10.8,60 23.4,18.6 "/>
+	<polygon class="tree-dark" points="51.8,41.4 26.5,41.4 39.2,0 "/>
+	<polygon class="tree-light" points="25.9,64.4 -4.4,64.4 10.8,14.5 "/>
+	<polygon class="tree-grey" points="42.5,70.8 16,70.8 29.3,23.3 "/>
+	<polygon class="tree-light" points="67.8,74.1 31.1,74.1 49.4,7.7 "/>
+	<polygon class="tree-medium" points="90.3,31.3 60,31.3 75.1,-18.3 "/>
+	<polygon class="tree-dark" points="81.4,50.5 56.1,50.5 68.7,9.2 "/>
+	<polygon class="tree-light" points="90.3,64.4 60,64.4 75.1,14.5 "/>
+	<polygon class="tree-medium" points="25.9,95.7 -4.4,95.7 10.8,46.1 "/>
+	<polygon class="tree-medium" points="47.3,97.7 17,97.7 32.1,48.2 "/>
+	<polygon class="tree-medium" points="67.8,94.1 37.5,94.1 52.6,44.5 "/>
+
+</svg>

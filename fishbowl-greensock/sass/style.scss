@@ -1,0 +1,82 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:800);
+
+$primary-pink: #FFCAE5;
+$white: white;
+
+
+body{
+	background-color:$primary-pink;
+	padding: 10px; 
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+h2,h3{
+	color: $white;
+}
+
+a#myAdLink{
+display:inline;
+background-color: $primary-pink;
+
+}
+
+
+#myAd{
+width: 800px;
+height: 800px;
+position: relative;
+overflow: hidden;	
+Opacity: 0;
+}
+
+
+
+#myAd .myAd_Img{
+	position:absolute;
+	background-image: url("../fishbowl.png");
+	no-repeat: 0px 0px;
+}
+
+
+
+#myAd #myAd_photo{  
+width:inherit;
+height: 800px;
+background-position: 0px 0px;
+bottom: 0px;
+left: 0px;
+no-repeat: 0px 0px;
+}
+
+
+#myAd #myAd_txt2{
+	position: absolute;
+	width: inherit;
+	text-align: center;
+	color: $white;
+	font-size: 2.7em;
+	top: 0px;
+	left: 0px;
+	text-transform: uppercase;
+}
+
+
+#myAd #myAd_fish{
+	width: 287px;/* width and height of your element*/
+	height: 207px;
+	background-position: -823px 0px; /* x= 823  y= 0*/
+	top: 240px; /* Where should it be displayed*/
+	left: 300px;
+}
+
+#myAd #myAd_bubbles{
+	width: 150px;/* width and height of your element*/
+	height: 300px;
+	background-position: -940px 485px; /* x= 823  y= 0*/
+	top: 15px; /* Where should it be displayed*/
+	left: 220px;
+}
+
+
+

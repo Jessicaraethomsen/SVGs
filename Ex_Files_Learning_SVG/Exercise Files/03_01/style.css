@@ -1,0 +1,54 @@
+.site {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.theimage {
+	display:inherit;
+    width: 50%;
+
+}
+
+
+
+#custom-shape {
+	
+	outline: 1px solid grey;
+	background: url('raster.svg');
+}
+
+#custom-shape2{
+
+	outline: 1px solid grey;
+	background: lightgrey;
+}
+
+.stroke {
+	stroke-width:1;
+	stroke: aqua;
+}
+
+.stroketest {
+	stroke-width:3;
+	stroke: aqua;
+	stroke-linecap: round;
+	stroke-linejoin: miter;
+	stroke-miterlimit:3;
+	stroke-opacity: .5;
+}
+
+
+.fill {
+	fill: pink;
+}
+
+.text{
+	font-size: 10px;
+	font-weight: bold;
+	font-family: ariel;
+	fill: blue;
+	//stroke: pink;
+
+	}

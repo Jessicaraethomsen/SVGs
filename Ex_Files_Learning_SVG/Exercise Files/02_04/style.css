@@ -1,0 +1,23 @@
+.site {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.theimage {
+    width: 50%;
+}
+
+.st0 {
+	fill:none;
+	stroke:#000000;
+	stroke-width:35;
+	stroke-miterlimit:10;
+}
+.st1 {
+	fill:none;
+	stroke:#3C3CCE;
+	stroke-width:35;
+	stroke-miterlimit:10;
+}

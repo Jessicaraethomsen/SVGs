@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Something Worth Seeing - an SVG Demo</title>
+    <link rel="stylesheet" href="style.css" type="text/css" media="all">
+</head>
+
+<body class="site">
+    <figure class="theimage">
+		<svg id="custom-shape" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+			<defs>
+				<marker id="arrowhead" viewBox="0 0 10 10" orient="auto" markerWidth="10" markerHeight="10" refX="3" refY="5">
+					<polygon class="fill" points="0,0 10,5 0,10 3,5" />
+				</marker>
+			</defs>
+
+			<polygon class="stroke" points="0,0 500,250 0,500 150,250" marker-mid="url(#arrowhead)"  marker-start="url(#arrowhead)" />
+			<path class="stroke" d="M53,301c96-42,278-130,197-12c-50.3,73.2,35,198,129-24" marker-mid="url(#arrowhead)" />
+		</svg>
+    </figure>
+</body>
+</html>

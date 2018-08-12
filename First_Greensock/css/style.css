@@ -1,0 +1,84 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:800);
+body {
+  background-color: #8DCC8D;
+  padding: 10px;
+  font-family: 'Open Sans', sans-serif; }
+
+h2, h3 {
+  color: white; }
+
+a#myAdLink {
+  display: inline;
+  background-color: #8DCC8D; }
+
+#myAd {
+  border: 1px solid green;
+  width: 650px;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+  Opacity: 0; }
+
+#myAd #myAd_text1 span {
+  display: inline_block;
+  position: relative; }
+
+#myAd .myAd_Img {
+  position: absolute;
+  background-image: url("graphics.png");
+  no-repeat: 0px 0px; }
+
+#myAd #myAd_clouds {
+  width: inherit;
+  height: inherit;
+  top: 0px;
+  left: 0px;
+  background-repeat: repeat-x; }
+
+#myAd #myAd_photo {
+  width: inherit;
+  height: 143px;
+  background-position: 0px -325px;
+  bottom: 0px;
+  left: 0px; }
+
+#myAd #myAd_txt1,
+#myAd #myAd_txt2 {
+  position: absolute;
+  width: inherit;
+  text-align: center;
+  color: white;
+  font-size: 2.7em;
+  top: 0px;
+  left: 0px;
+  text-transform: uppercase; }
+
+#myAd #myAd_marker {
+  width: 60px;
+  height: 95px;
+  background-position: -243px -230px;
+  top: 90px;
+  left: 290px; }
+
+#myAd #myAd_shadow {
+  width: 35px;
+  height: 16px;
+  background-position: -311px -236px;
+  top: 175px;
+  left: 306px; }
+
+#myAd #myAd_txt3 {
+  width: 510px;
+  height: 28px;
+  background-position: -2px -202px;
+  top: 58px;
+  left: 73px; }
+
+#myAd #myAd_surfboad {
+  width: 237px;
+  height: 62px;
+  background-position: -2px -233px;
+  top: 110px;
+  left: 390px; }
+
+/*# sourceMappingURL=style.css.map */

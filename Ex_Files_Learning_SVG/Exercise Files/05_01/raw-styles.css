@@ -1,0 +1,61 @@
+/* Fox styles */
+.frame,
+.face,
+.ears,
+.beard,
+.mouth,
+.nose,
+.eye-outline,
+.eye-whites,
+.eye-pupils,
+.bubble {
+    fill:none;
+    stroke: black;
+    stroke-width: 2px;
+}
+
+.frame {
+    stroke-width: 5px;
+}
+
+.face {
+    fill:#E26910;
+}
+
+.ears {
+    fill:#E2B79A;
+}
+
+.beard {
+    fill:#E5E1D3;
+}
+
+.nose,
+.mouth {
+    stroke: black;
+    fill: black;
+}
+
+.eye-outline,
+.eye-pupils {
+    fill: black;
+}
+
+.eye-whites {
+    fill: white;
+}
+
+.bubble {
+    stroke-width: 2.5px;
+    fill: white;
+}
+
+.text {
+    fill: none;
+    font-family:'Georgia', 'Times New Roman', 'Times', serif;
+    font-size: 1em;
+}
+
+.text text {
+    fill: black;
+}
