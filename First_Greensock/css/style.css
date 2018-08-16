@@ -12,7 +12,7 @@ a#myAdLink {
   background-color: #8DCC8D; }
 
 #myAd {
-  border: 1px solid green;
+  border: 5px solid green;
   width: 650px;
   height: 200px;
   position: relative;

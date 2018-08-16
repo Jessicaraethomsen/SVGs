@@ -5,6 +5,9 @@
 <link rel="stylesheet" type="text/css" href="css/style.css">
 
 <title>GreenSock</title>
+
+<script type= "text/javascript" src="script/TweenMax.min.js"></script>
+
 </head>
 <body>
 
@@ -14,42 +17,45 @@
 <a id="myAdLink" href="#">
 	
 	<div id="myAd">
-	<div class="myAd_Img" id="myAd_clouds"></div>
+	
 	<div class="myAd_Img" id="myAd_photo"></div>
 	<div id="myAd_txt1">Need a holiday?</div>
 	<div id="myAd_txt2">Let's run away to here</div>
-	<div class="myAd_Img" id="myAd_shadow"></div>
-	<div class="myAd_Img" id="myAd_txt3"></div>
-	<div class="myAd_Img" id="myAd_marker"></div>
-	<div class="myAd_Img" id="myAd_surfboad"></div>
+	<div class="myAd_Img" id="myAd_fish"></div>
+	<div class="myAd_Img" id="myAd_bubbles"></div>
+	
 
 	</div>
 </a>
-<script type= "text/javascript" src="script/TweenMax.min.js"></script>
+
+
 <script type= "text/javascript">
+
 // here we are making a generic js function so we can animate here
 (function(){
-
- var tl1 = new TimelineMax({repeat:-1});
  //From take the current position and reloate the element to the position
- tl1.to('#myAd', .9, {opacity:1 })
+ var tl1 = new TimelineMax({repeat:-1});
+  var tl2 = new TimelineMax({repeat:-1});
+
+
+ tl1
+ .to('#myAd',.9, {opacity:1 })
  .from('#myAd_txt2', 1.3,{ top: -100, ease: Power2.easeOut })
- .to('#myAd_txt1', 3,{ top: 210, ease: Power2.easeOut }, '-=.9')
- .from('#myAd_marker', 1.2, {top: -110,ease: Bounce.easeOut}, '-=.5')
- .from('#myAd_shadow', 1.2, {opacity:0, ease:Bounce.easeOut}, '-=1')
- .from('#myAd_txt3', 1.2, {scale:.1, opacity:0, ease: Power2.easeOut}, '-=.9')
- .from('#myAd_surfboad', 1.3, {top:280, rotation:-130, left: 300, ease: Back.easeOut}, 'cta');
+ .to('#myAd_txt1', 3,{ top: 910,  ease:Bounce. easeOut, y: -100}, '-=.9')
+
+ ;
+
+
+ tl2
+ .from('#myAd_fish', 1.3,{ top: 50, ease: Power2.easeOut })
+ .to('#myAd_fish', 1,{ top: 50,  ease:Power2. easeOut})
+ ;
 
 
 
-var tl2 = new TimelineMax({repeat:-1});
-tl2.to('#myAd_clouds', 6, {backgroundPositionX: 649, ease:Power0.easeOut});
 
-
-
-}());
-
-
+}
+());
 
 </script>
 </body>

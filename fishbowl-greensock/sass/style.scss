@@ -28,6 +28,7 @@ height: 800px;
 position: relative;
 overflow: hidden;	
 Opacity: 0;
+border: 2px solid white;
 }
 
 
@@ -50,6 +51,19 @@ no-repeat: 0px 0px;
 }
 
 
+#myAd #myAd_txt1{
+	position: absolute;
+	width: inherit;
+	text-align: center;
+	color: $white;
+	font-size: 2.7em;
+	top: 0px;
+	left: 0px;
+	text-transform: uppercase;
+}
+
+
+
 #myAd #myAd_txt2{
 	position: absolute;
 	width: inherit;
@@ -63,18 +77,21 @@ no-repeat: 0px 0px;
 
 
 #myAd #myAd_fish{
+	/*Find your element*/
 	width: 287px;/* width and height of your element*/
 	height: 207px;
 	background-position: -823px 0px; /* x= 823  y= 0*/
-	top: 240px; /* Where should it be displayed*/
+
+	/*Position your element in relation to canvas*/
+	top: 300px; /* Where should it be displayed*/
 	left: 300px;
 }
 
 #myAd #myAd_bubbles{
 	width: 150px;/* width and height of your element*/
 	height: 300px;
-	background-position: -940px 485px; /* x= 823  y= 0*/
-	top: 15px; /* Where should it be displayed*/
+	background-position: -940px 485px; /* x= -940  y= 0*/
+	top: 60px; /* Where should it be displayed*/
 	left: 220px;
 }
 

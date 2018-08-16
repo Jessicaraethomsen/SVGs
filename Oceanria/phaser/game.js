@@ -20,7 +20,7 @@ Main.prototype = {
 		// adding all game states
 		game.state.add('boot', boot);
 		
-		//game.state.add('splash1', splash1);
+		game.state.add('splash1', splash1);
 	    game.state.add('level1', level1);
 
 		// launching the boot screen

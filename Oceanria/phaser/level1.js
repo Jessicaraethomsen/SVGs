@@ -1,4 +1,8 @@
 var cursors;
+var score;
+var score1;
+var score2;
+var exploreTxt;
 
 var level1 = {
 
@@ -6,6 +10,11 @@ var level1 = {
 		"use strict";
 		game.add.image(0, 0, 'bg-level1');
 		game.world.setBounds(0, 0, 1900, 1082);
+
+		score = 0;
+		score1 = 0;
+		score2 = 0;
+
 
 		// physics, so enable the Arcade Physics system
 		game.physics.startSystem(Phaser.Physics.ARCADE);
@@ -35,6 +44,13 @@ var level1 = {
  
     	//  The 1000 tells it to wait for 1 second before restarting the fade.
     	tween2.repeat(10, 1000);
+
+    	////FISH
+		this.crab= game.add.sprite(1200, 900, 'nextcrab');
+		game.physics.enable(this.crab);
+		game.add.tween(this.crab).to({ x: 800 }, 30000, Phaser.Easing.Linear.None, true, 0, 1200, true)
+
+
 
 
 	
@@ -75,9 +91,15 @@ var level1 = {
 		game.physics.arcade.enable(this.sub);
 	    cursors = game.input.keyboard.createCursorKeys();
 
+	    //explore
 
+	    this.exploreTxt = this.add.text(16, 40, {
+	    	fontSize: '20px',
+	    	fill: '#fff'
+	    });
+	    this.exploreTxt.fixedToCamera = true;
+	    this.exploreTxt.text = 'Explorer Information:' ;
 
-		
 
 	},
 	
@@ -93,7 +115,8 @@ var level1 = {
 		game.physics.arcade.overlap(this.sub, this.bottle, BottlePop, null, this);
 		game.physics.arcade.overlap(this.sub, this.straw, StrawPop, null, this);
 		game.physics.arcade.overlap(this.sub, this.bag, BagPop, null, this);
-		
+		game.physics.arcade.overlap(this.sub, this.crab, nextlevel, null, this);
+		game.physics.arcade.overlap(this.sub, this.crab, keepExploring, null, this);
 		
 
 if(cursors.left.isDown && this.sub.x>-10){
@@ -122,6 +145,7 @@ function BottlePop(sub, bottle) {
 	"use strict";
 	this.bottlefact.visible = true;
 	game.time.events.add(Phaser.Timer.SECOND * 15, fadeBottle, this);
+	score++;
 };
 
 function fadeBottle() {
@@ -137,6 +161,7 @@ function StrawPop(sub, straw) {
 	"use strict";
 	this.strawfact.visible = true;
 	game.time.events.add(Phaser.Timer.SECOND * 15, fadeStraw, this);
+	score1++;
 };
 
 function fadeStraw() {
@@ -152,6 +177,7 @@ function BagPop(sub, bag) {
 	"use strict";
 	this.bagfact.visible = true;
 	game.time.events.add(Phaser.Timer.SECOND * 15, bagStraw, this);
+	score2++;
 };
 
 function bagStraw() {
@@ -162,3 +188,22 @@ function bagStraw() {
 };
 
 
+//Try again
+function keepExploring() {
+	"use strict";
+	this.exploreTxt.text = 'Keep Exploring... Find 3 Ocean facts to continue' ;
+};
+
+
+function nextlevel(sub, crab){
+	"use strict";
+
+	if (score >= 1 && score1 >= 1 && score2 >= 1) {
+		 sub.kill();
+		 console.log(score + score2 + score1);
+
+		setTimeout(function() {
+		game.state.start("splash1");
+		}, 500);
+	}
+}

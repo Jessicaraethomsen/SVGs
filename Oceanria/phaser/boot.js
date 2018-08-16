@@ -51,6 +51,7 @@ var boot = {
 		game.load.image('bottle', 'assets/bottle.png');
 		game.load.image('straw', 'assets/straw.png');
 		game.load.image('bag', 'assets/plastic.png');
+		game.load.image('nextcrab', 'assets/crab.png');
 
 
 
